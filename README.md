@@ -1,11 +1,15 @@
 # Alt Three Bus
 
-An improved command bus for Laravel 5.
+[![Build Status](https://img.shields.io/travis/AltThree/Bus/master.svg?style=flat-square)](https://travis-ci.org/AltThree/Bus)
+[![StyleCI](https://github.styleci.io/repos/48430841/shield?branch=master)](https://github.styleci.io/repos/48430841)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+
+**An improved command bus for Laravel 5.**
 
 
 ## Installation
 
-This version requires [PHP](https://php.net) 7, and supports Laravel 5.3, 5.4, or 5.5.
+This version requires [PHP](https://php.net) 7.1 - 7.3, and supports Laravel 5.5 - 5.8 only.
 
 To get the latest version, simply require the project using [Composer](https://getcomposer.org):
 
@@ -13,14 +17,12 @@ To get the latest version, simply require the project using [Composer](https://g
 $ composer require alt-three/bus
 ```
 
-Once installed, you need to remove the `Illuminate\Bus\BusServiceProvider` and replace it with the `AltThree\Bus\BusServiceProvider` service provider in your `config/app.php`.
-
-*Note: This package WILL NOT be picked up by Laravel 5.5's automatic package discovery, because of it's non-standard requirement of replacing a service provider from the core.*
+This package **will not** be picked up by Laravel's automatic package discovery. Once installed, you need to **remove** the `Illuminate\Bus\BusServiceProvider` and **replace** it with the `AltThree\Bus\BusServiceProvider` service provider in your `config/app.php`.
 
 
 ## Security
 
-If you discover a security vulnerability within this package, please e-mail us at support@alt-three.com. All security vulnerabilities will be promptly addressed.
+Our full security policy is available to read [here](https://github.com/AltThree/Bus/security/policy).
 
 
 ## License
